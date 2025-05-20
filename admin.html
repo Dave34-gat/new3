@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+   <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/styles2.css">
+  <link rel="stylesheet" href="Styles/styles3.css">
+  <link rel="stylesheet" href="Styles/styles4.css"/>
+  <link rel="stylesheet" href="Styles/admin.css" />
+  <script defer src="js/admin.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Eco Grocery Store</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="procurement.html">Procurement</a></li>
+        <li><a href="admin.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Admin Dashboard -->
+  <section class="admin-dashboard">
+    <div class="container">
+      <h1>Welcome, Admin</h1>
+
+      <!-- Analytics -->
+      <h2>Analytics Overview</h2>
+      <div class="analytics-grid">
+        <div class="card">
+          <h3>Total Orders</h3>
+          <p id="totalOrders">0</p>
+        </div>
+        <div class="card">
+          <h3>Orders This Month</h3>
+          <p id="monthlyOrders">0</p>
+        </div>
+        <div class="card">
+          <h3>Inventory Items</h3>
+          <p id="inventoryCount">0</p>
+        </div>
+      </div>
+
+      <!-- User Management -->
+      <h2>User Management</h2>
+      <form id="userForm">
+        <input type="text" id="newUser" placeholder="Username" required />
+        <input type="text" id="role" placeholder="Role (e.g., Manager)" required />
+        <button type="submit">Add User</button>
+      </form>
+
+      <ul id="userList">
+        <!-- Users will appear here -->
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

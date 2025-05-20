@@ -1,0 +1,150 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image: url("c:\Users\i3\Videos\photo_2025-05-04_13-48-47.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 1000px;
+background-color:#c7bc21(245, 203, 140);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03962f;
+    padding: 1rem 2rem;
+    color: #f7eeee;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #d4ffda;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Products Section */
+.intro-products {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.intro-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #ecd468;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+    padding: 0 1rem;
+}
+
+.product-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    background-color: #2c7a4b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.product-card a:hover {
+    background-color: #256b3c;
+}
+
+/* Footer */
+footer {
+    background-color: #021108;
+    color: #f3f1ef;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .social-links a,
+footer .footer-links a {
+    color: #d4ffda;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

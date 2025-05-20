@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalogue - Eco Grocery Store</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/styles2.css">
+  <link rel="stylesheet" href="Styles/styles3.css"/>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Eco Grocery Store</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="order.html">Ordering</a></li>
+        <li><a href="procurement.html">Procurement</a></li>
+        <li><a href="admin.html">Admin Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Catalogue Section -->
+  <section class="catalogue-section">
+    <div class="container">
+      <h1>Our Catalogue</h1>
+
+      <!-- Filter Menu -->
+      <div class="filter-menu">
+        <label for="category">Filter by category:</label>
+        <select id="category" onchange="filterProducts()">
+          <option value="all">All</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="dairy">Dairy</option>
+          <option value="packaging">Eco Packaging</option>
+        </select>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <div class="product-card" data-category="vegetables">
+          <img src="c:\Users\i3\Videos\ecome 3\Emma-ONeill-with-vegetable-harvest.jpg" alt="Organic Vegetables" />
+          <h3>Organic Vegetables</h3>
+          <p>Locally-grown, chemical-free vegetables.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="product-card" data-category="dairy">
+          <img src="c:\Users\i3\Videos\ecome 3\photo_2025-05-11_21-24-15.jpg" alt="Fresh Milk" />
+          <h3>Fresh Milk</h3>
+          <p>Pure cow milk sourced from local farms.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="product-card" data-category="packaging">
+          <img src="c:\Users\i3\Videos\ecome 3\photo_2025-05-11_20-48-38.jpg" alt="Reusable Bags" />
+          <h3>Reusable Shopping Bags</h3>
+          <p>Eco-friendly cloth bags for your groceries.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Add more product cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Contact us: ecogrocery@eth.com | 0912876164</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

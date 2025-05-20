@@ -1,0 +1,30 @@
+.login-section,
+.admin-dashboard {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #e0f7e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form input,
+form button {
+  margin: 0.5rem;
+  padding: 0.6rem;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}

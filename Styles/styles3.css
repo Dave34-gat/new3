@@ -1,0 +1,16 @@
+.catalogue-section {
+    padding: 3rem 2rem;
+     text-align: center;
+background-color:rgb(245, 203, 140)2;
+    }
+
+.filter-menu {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;;
+}
+
+.filter-menu select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}

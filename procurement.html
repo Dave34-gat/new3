@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Procurement - Eco Grocery Store</title>
+  <link rel="stylesheet" href="Styles/styles.css"/>
+  <script defer src="js/script3.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Eco Grocery Store</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="order.html">Ordering</a></li>
+        <li><a href="procurement.html">Procurement</a></li>
+        <li><a href="admin.html">Admin Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Procurement Section -->
+  <section class="procurement-section">
+    <div class="container">
+      <h1>Procurement Dashboard</h1>
+
+      <!-- Filter/Search -->
+      <div class="form-group">
+        <input type="text" id="searchInput"  placeholder="Search by supplier or product..." onkeyup="searchProcurements()"/>
+      </div>
+
+      <!-- Procurement Orders Table -->
+      <h2>Current Orders</h2>
+      <table id="procurementTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Supplier</th>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Entries will be added dynamically -->
+        </tbody>
+      </table>
+
+      <!-- Add/Update Procurement Order -->
+      <h2>Add / Update Procurement Order</h2>
+      <form id="procurementForm">
+        <input type="text" id="orderId" placeholder="Order ID" required />
+        <input type="text" id="supplier" placeholder="Supplier Name" required />
+        <input type="text" id="product" placeholder="Product" required />
+        <select id="status">
+          <option value="Pending">Pending</option>
+          <option value="Approved">Approved</option>
+          <option value="Delivered">Delivered</option>
+        </select>
+        <input type="date" id="date" required />
+        <button type="submit">Save Order</button>
+      </form>
+
+      <!-- Supplier Management -->
+      <h2>Supplier Management</h2>
+      <form id="supplierForm">
+        <input type="text" id="supplierName" placeholder="Supplier Name" required />
+        <input type="text" id="contact" placeholder="Contact Info" required />
+        <input type="text" id="suppliedProduct" placeholder="Product Supplied" required />
+        <button type="submit">Add Supplier</button>
+      </form>
+
+      <ul id="supplierList">
+        <!-- Suppliers will be listed here -->
+      </ul>
+
+      <!-- Inventory Tracking -->
+      <h2>Inventory Tracking</h2>
+      <div class="form-group">
+        <label for="stockProduct">Product Name:</label>
+        <input type="text" id="stockProduct" placeholder="Product Name"/>
+        <label for="stockQuantity">Stock Quantity:</label>
+        <input type="number" id="stockQuantity" placeholder="Quantity"/>
+        <button onclick="updateStock()">Update Stock</button>
+      </div>
+
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Stock Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Inventory items added dynamically -->
+        </tbody>
+      </table>
+
+    </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Contact us: ecogrocery@eth.com | 0912876164</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
